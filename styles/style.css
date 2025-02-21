@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 93px 50px 95px;
+  padding: 90px 50px 98px;
 }
 
 .header__links-list {
@@ -14,7 +14,7 @@
 }
 
 .header__links-list-item {
-  list-style: circle;;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -37,14 +37,17 @@
   padding-inline: 12px;
 }
 
-.header__address {
+.address {
   font-style: normal;
-  text-underline-offset: 5px;
-  width: 240px;
-  justify-self: end;
   font-weight: 400;
   font-size: 18px;
-  line-height: 135%;
+  line-height: 1.35;
+  text-underline-offset: 5px;
+}
+
+.header__address {
+  width: 240px;
+  justify-self: end;
 }
 
 .cover {
@@ -67,29 +70,22 @@
 }
 
 .cover__title {
-  height: 385px;
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
-}
-
-.aligned-text {
-  display: block;
-  line-height: 120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
 }
 
 .aligned-text_center {
-  display: block;
   text-align: center;
-  line-height: 147px;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: end;
-  line-height: 125px;
 }
 
 .no-letter-spacing {
@@ -100,7 +96,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 107px;
+  margin-top: 105px;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
@@ -125,7 +121,7 @@
 }
 
 .lots {
-  margin-top: 178px;
+  margin-top: 180px;
 }
 
 .lots__card-list {
@@ -175,7 +171,7 @@
 .card__title {
   text-decoration: underline;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 1.20;
   text-transform: uppercase;
   color: #fff;
 }
@@ -183,7 +179,7 @@
 .card__text {
   text-decoration: none;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.20;
   color: #fff;
 }
 
@@ -193,8 +189,6 @@
   text-underline-offset: 5px;
 }
 
-
-
 .about {
   margin: 120px 24px 180px;
 }
@@ -203,7 +197,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   column-gap: 25px;
-
 }
 
 .about__logo {
@@ -233,15 +226,12 @@
 
 .about__text {
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.20;
 }
 
-.about__text-paragraph {
+.about__text-paragraph:not(:last-child) {
   padding-bottom: 24px;
-  padding-right: 5px;
 }
-
-
 
 .footer {
   display: flex;
@@ -249,15 +239,6 @@
   padding-inline: 50px;
   margin-bottom: 82px;
 }
-
-.address-footer {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  text-underline-offset: 5px;
-}
-
 
 .footer__menu-list,
 .footer__social-list {
